@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Muthu Karuppan — Professional Portfolio</title>
+
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- main script -->
+    <script src="in.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="logo">MK</div>
+            <div class="title">
+                <div class="name">MUTHUKARUPPAN P</div>
+                <div class="tag">Software Developer • Java / Python / Web</div>
+            </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#resume" class="nav-link">Resume</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="downloadCvHeader" class="icon-btn" title="Download Resume">⬇️</button>
+            <button id="notifyMe" class="icon-btn" title="Notify me (test webhook/email)">🔔</button>
+        </div>
+    </header>
+
+    <!-- floating background -->
+    <div id="bg-visual" aria-hidden="true"></div>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="section hero">
+            <div class="hero-left">
+                <div class="eyebrow">Portfolio • Student • Developer</div>
+                <h1>Hi, I’m <span class="accent">Muthu Karuppan</span></h1>
+                <p class="lead">Computer Science Engineering student. I build GUI & web apps with Java, Python and SQL. This portfolio highlights my projects, skills, education, certificates and contact details — everything recruiters need.</p>
+
+                <div class="hero-ctas">
+                    <a class="btn primary" href="#projects">See Projects</a>
+                    <!--<button class="btn" id="openAbout">About Me</button>-->
+                </div>
+
+
+
+                <div class="purpose">
+                    <h4>Purpose</h4>
+                    <p class="small">🎯 Showcase projects, skills & downloadable resume for internships/recruiters.</p>
+                    <p class="small">👤 Audience: recruiters, professors, clients.</p>
+                </div>
+            </div>
+
+            <aside class="hero-right">
+                <div class="profile-card">
+                    <img src="assets/images/profile.jpg" alt="Profile photo" class="profile-photo" id="profilePhoto" />
+                    <div class="profile-info">
+                        <h3>MUTHUKARUPPAN P</h3>
+                        <p class="muted">B.E. Computer Science — K.Ramakrishnan College Of Engineering, Trichy- 622 102.
+                            <br>(2023–2027)</p>
+
+                        <div class="contacts small">
+                            <div>📧 <a href="mailto:muthukaru7446@gmail.com">muthukaru7446@gmail.com</a></div>
+                            <div>📱 +91 8838019971</div>
+                            <div>🔗 <a href="https://www.linkedin.com/in/muthu-karuppan-355466331" target="_blank">linkedin.com/in/muthu-karuppan-355466331</a></div>
+                            <div>🔗
+                                <a href="https://github.com/muthu-2006-p" target="_blank">https://github.com/muthu-2006-p</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icons-row" aria-label="Quick project icons">
+                    <button class="icon" data-key="voting" title="Online Voting System">🗳️<span>Voting</span></button>
+                    <button class="icon" data-key="hospital" title="Hospital Management System">🏥<span>Hospital</span></button>
+                    <button class="icon" data-key="datascience" title="Data Science Mini Project">📊<span>Data</span></button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ABOUT (text from your resume & 'ABOUT ME' content) -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="card about-card">
+                <p><strong>About:</strong> Computer Science Engineering student with knowledge of C, Java, and MySQL. Passionate about coding and learning new technologies. Eager to contribute to real-world software projects.</p>
+                <div class="mini"></div>
+            </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="cards">
+                <!-- VOTING -->
+                <article class="card project-card" data-key="Employee Information System">
+                    <img src="assets/images/project_voting.png" alt="Employee Information System" class="proj-img" />
+                    <h3>Employee Information System</h3>
+                    <p class="muted">Java Swing • MySQL — secure GUI Salary Calulation with Admin and Timesheet tracking.</p>
+                    <div class="card-actions">
+                        <button class="btn" data-action="open" data-key="voting">Open Info</button>
+                        <button class="btn primary" data-action="download" data-key="voting">Download PDF</button>
+                    </div>
+                </article>
+
+                <!-- HOSPITAL -->
+                <article class="card project-card" data-key="Tic Tac Toe Game">
+                    <img src="assets/images/project_hospital.png" alt="Tic Tac Toe Game" class="proj-img" />
+                    <h3>Tic Tac Toe Game</h3>
+                    <p class="muted">HTML/CSS + Java backend • Created a GUI based game.</p>
+                    <div class="card-actions">
+                        <button class="btn" data-action="open" data-key="hospital">Open Info</button>
+                        <button class="btn primary" data-action="download" data-key="hospital">Download PDF</button>
+                    </div>
+                </article>
+
+                <!-- DATASCIENCE -->
+                <article class="card project-card" data-key="Online Voting System">
+                    <img src="assets/images/project_datascience.png" alt="Online Voting System" class="proj-img" />
+                    <h3>Online Voting System</h3>
+                    <p class="muted">Designed and Implemented secure online voting application.</p>
+                    <div class="card-actions">
+                        <button class="btn" data-action="open" data-key="datascience">Open Info</button>
+                        <button class="btn primary" data-action="download" data-key="datascience">Download PDF</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-name">Programming</div>
+                    <div class="skill-list small">Java • Python • C • Data Structures • PHP</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Web & Tools</div>
+                    <div class="skill-list small">HTML • CSS • Flask • Git • VS Code • Tableau • PowerBI • Eclipse</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Database</div>
+                    <div class="skill-list small">MySQL • SQLite • MongoDB</div>
+                </div>
+                <div class="skill soft">
+                    <div class="skill-name">Soft Skills</div>
+                    <div class="skill-list small">Teamwork • Communication • Problem Solving • Time Management</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline card">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h4>K. Ramakrishnan College of Engineering — B.E. Computer Science, Trichy - 622 112</h4>
+                        <p class="muted">CGPA 9.0 (2023–2027)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h4>GOVERNMENT HIGHER SECONDARY SCHOOL (HSC), Illuppur- 622 102</h4>
+                        <p class="muted">HSC 88% (2022–2023)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME & CERTIFICATES -->
+        <section id="resume" class="section">
+            <h2 class="section-title">Resume & Certificates</h2>
+            <div class="card docs-grid">
+                <div>
+                    <h4>Resume</h4>
+                    <p class="muted">Download or view the resume (PDF).</p>
+                    <div style="margin-top:10px">
+                        <button class="btn" id="openResume">Open Resume</button>
+                        <button class="btn primary" id="downloadResume">Download Resume</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Certificates</h4>
+                    <div class="certs small">
+                        <button class="btn" data-cert="cert1.pdf">Data Analytics</button>
+                        <button class="btn" data-cert="cert2.pdf">Quiz</button>
+                        <button class="btn" data-cert="cert3.pdf">MongoDB</button>
+                        <button class="btn" data-cert="cert4.pdf">Python for DataScience</button>
+                        <button class="btn" data-cert="cert5.pdf">CodTech</button>
+                        <button class="btn" data-cert="cert6.pdf">Java Programming</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="resume" class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="card docs-grid">
+                <div>
+                    <div class="certs small">
+                        <button class="btn" data-cert="cert1.pdf">Tamil</button>
+                        <button class="btn" data-cert="cert2.pdf">English</button>
+                        <button class="btn" data-cert="cert3.pdf">Japanesh</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-grid">
+                <div class="contact-card card">
+                    <h3>Get in touch</h3>
+                    <p class="muted">📧Email: <a href="mailto:muthukaru7446@gmail.com">muthukaru7446@gmail.com</a></p>
+                    <p class="muted">📱Phone: +91 8838019971</p>
+                    <p class="muted">🔗LinkedIn: <a href="https://www.linkedin.com/in/muthu-karuppan-355466331" target="_blank">muthu-karuppan</a></p>
+                </div>
+
+                <form class="card contact-form" id="contactForm">
+                    <label class="small">Name</label>
+                    <input id="cf-name" required placeholder="Your name" />
+                    <label class="small">Email</label>
+                    <input id="cf-email" type="email" required placeholder="you@example.com" />
+                    <label class="small">Message</label>
+                    <textarea id="cf-message" required placeholder="How can I help?"></textarea>
+                    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
+                        <button class="btn" type="reset">Reset</button>
+                        <button class="btn primary" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="visitor-toast" class="toast hidden">
+                <div class="toast-icon">✉️</div>
+                <div class="toast-text"><strong>Visitor:</strong> Someone visited your portfolio</div>
+                <button class="toast-close" id="closeToast">✖</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>© 2025 MUTHUKARUPPAN P — Built with HTML / CSS / JS</div>
+        <div class="footer-links">
+            <button class="icon-link" data-key="cv">em</button>
+            <button class="icon-link" data-key="voting">game</button>
+            <button class="icon-link" data-key="hospital">vote</button>
+        </div>
+    </footer>
+</body>
+
+</html>
